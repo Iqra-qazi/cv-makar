@@ -1,0 +1,306 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+    135deg,
+    #fdf6f0 0%,
+    #f5e6da 50%,
+    #ffffff 100%
+  );
+
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  padding: 12px 20px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff !important;
+}
+
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+
+.nav-link {
+  font-weight: 600;
+  color: #fff !important;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+}
+
+.dropdown-item {
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background: #4facfe;
+  color: #fff;
+}
+
+
+.btn-outline-success {
+  border: none;
+  margin-left: 10px;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline-success:first-child {
+  background: #fff;
+  color: #4facfe;
+}
+
+.btn-outline-success:first-child:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+.btn-outline-success:last-child {
+  background: #000;
+  color: #fff;
+}
+
+.btn-outline-success:last-child:hover {
+  background: #fff;
+  color: #000;
+}
+h1 {
+  font-weight: 800;
+  font-size: 42px;
+  color: #161515;
+  padding: 40px 20px;
+}
+
+
+p {
+  color: #242222;
+  font-size: 18px;
+}
+
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  background: #ffcc00;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.3s;
+}
+
+
+.btn:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  width: 350px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+
+.card h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+.card input:focus {
+  border-color: #f3cfc6;
+  box-shadow: 0 0 5px rgba(243, 207, 198, 0.5);
+}
+
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #ffcc00;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+
+.toggle {
+  margin-top: 15px;
+  color: #666;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: #000;
+}
+
+
+.hidden {
+  display: none;
+}
+.form-card {
+  width: 700px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  width: 100%;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #ffcc00;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e6b800;
+  transform: scale(1.03);
+}
+.template1 {
+  width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.template1 h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.template1 p {
+  margin: 5px 0;
+}
+
+.template1 hr {
+  margin: 15px 0;
+}
+
+.template1 h3 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+.templates {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.template-card {
+  width: 220px;
+  height: 150px;
+  background: linear-gradient(135deg, #f5ebe0, #e3d5ca);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.template-card h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+.template-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: linear-gradient(135deg, #e3d5ca, #d6ccc2);
+}
