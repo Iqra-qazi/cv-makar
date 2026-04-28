@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <h1 class="text-center p-3">CV Builder</h1>
+
+<h3>Personal Information</h3>
+
+<input type="text" id="fullName" placeholder="Full Name">
+<input type="text" id="lastName" placeholder="Last Name">
+<input type="email" id="emailForm" placeholder="Email">
+<input type="phone" id="phone" placeholder="Phone">
+<input id="title" placeholder="Job Title">
+
+<h3>Summary</h3>
+<textarea id="summary" placeholder="Write your summary"></textarea>
+
+<h3>Education</h3>
+<textarea id="education" placeholder="Education details"></textarea>
+
+<h3>Experience</h3>
+<textarea id="experience" placeholder="Experience details"></textarea>
+
+<h3>Technical Skills</h3>
+<textarea id="skills" placeholder="Skills"></textarea>
+
+<h3>References</h3>
+<textarea id="references" placeholder="References"></textarea>
+
+
+<button class="btn btn-warning" onclick="saveCV()">CV Generate</button> -->
+    <h1>CV Builder (Step Form)</h1>
+
+    <!-- STEP 1 -->
+    <div class="step active">
+        <h3>Personal Information</h3>
+
+        <input id="fullName" placeholder="Full Name">
+        <input id="lastName" placeholder="Last Name">
+        <input id="emailForm" placeholder="Email">
+        <input id="phone" placeholder="Phone">
+
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+
+    <div class="step">
+        <h3>Job Details</h3>
+
+        <input id="title" placeholder="Job Title">
+        <textarea id="summary" placeholder="Summary"></textarea>
+
+        <button onclick="prevStep()">Previous</button>
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+    <div class="step">
+        <h3>Education & Experience</h3>
+
+        <textarea id="education" placeholder="Education"></textarea>
+        <textarea id="experience" placeholder="Experience"></textarea>
+
+        <button onclick="prevStep()">Previous</button>
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+
+    <div class="step">
+        <h3>Skills & References</h3>
+
+        <textarea id="skills" placeholder="Skills"></textarea>
+        <textarea id="references" placeholder="References"></textarea>
+
+        <button onclick="prevStep()">Previous</button>
+        <button onclick="saveCV()">Generate CV</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

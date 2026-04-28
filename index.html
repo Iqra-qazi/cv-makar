@@ -1,81 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV Studio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CV Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">My CV Studio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tools
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Create resume</a></li>
-            <li><a class="dropdown-item" href="#">Create cover letter</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Ai </a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Resume
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Resume Template</a></li>
-            <li><a class="dropdown-item" href="#">Ai resume Geneator</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">How to create resume</a></li>
-          </ul>
-        </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cover Letters
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Cover letter Format</a></li>
-            <li><a class="dropdown-item" href="#">Cover letter temlate</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Ai cover letter Geneator</a></li>
-          </ul>
-        </li>
-       <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Blog</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-      
-        <button class="btn btn-outline-success" type="button" onclick="clicklogin()">Login</button>
-        <button class="btn btn-outline-success" type="button" onclick="clicksignup()">Signup</button>
-      </form>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My CV Studio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Tools
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Create resume</a></li>
+              <li><a class="dropdown-item" href="#">Create cover letter</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Ai </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Resume
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Resume Template</a></li>
+              <li><a class="dropdown-item" href="#">Ai resume Geneator</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">How to create resume</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cover Letters
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Cover letter Format</a></li>
+              <li><a class="dropdown-item" href="#">Cover letter temlate</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Ai cover letter Geneator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+
+          <button class="btn btn-outline-success" type="button" onclick="clicklogin()">Login</button>
+          <button class="btn btn-outline-success" type="button" onclick="clicksignup()">Signup</button>
+        </form>
+      </div>
     </div>
+  </nav>
+  <div class="container">
+
+    <h1 class="text-center p-5 light">Let AI Build The Resume That Builds Your Career</h1>
+    <button class="btn text-center btn-warning " onclick="clickhome()">Start free</button>
+    <p class="text-center p-5">Easy-to-use templates, smart prompt-based suggestions, and one-click download.</p>
+    <div class="template-conatiner">
+      <img
+        src="https://aiproresume.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftemplate_1.8a6dd17d.webp&w=640&q=75&dpl=dpl_oASVDjqXd82HYBmiAeDjRSpHhZRU"
+        alt="">
+      <img
+        src="https://aiproresume.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftemplate_2.fcb4a3e8.webp&w=640&q=75&dpl=dpl_oASVDjqXd82HYBmiAeDjRSpHhZRU"
+        alt="">
+      <img
+        src="https://aiproresume.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftemplate_3.66ae8060.webp&w=640&q=75&dpl=dpl_oASVDjqXd82HYBmiAeDjRSpHhZRU"
+        alt="">
+      <img
+        src="https://aiproresume.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftemplate_4.da0f4f50.webp&w=640&q=75&dpl=dpl_oASVDjqXd82HYBmiAeDjRSpHhZRU"
+        alt="">
+      <img
+        src="https://aiproresume.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftemplate_5.c7084566.webp&w=640&q=75&dpl=dpl_oASVDjqXd82HYBmiAeDjRSpHhZRU"
+        alt="">
+    </div>
+
+    <div class="about-content">
+
+      <h2 class="about-heading">What Makes Us The Best AI Resume Builder Online?</h2>
+
+      <p class="para-about">
+        AI Pro Resume is your resume specialist that provides AI-based personalised suggestions based on your skills and
+        experience. These suggestions speed up your resume and cover letter creation.
+        With our smart prompt system, you can simply enter a prompt about your role or target job and get structured,
+        professional content in seconds. You can also import your existing resume. Our smart parser extracts all data
+        from your file and transfers it to the creative resume maker.
+      </p>
+
+      <button class="btn btn-info">Let’s Build Your Resume</button>
+
+    </div>
+
+    <footer class="footer">
+
+
+      <div class="newsletter">
+        <h2>Stay up to date with<br>latest news</h2>
+
+        <div class="subscribe-box">
+          <input type="email" placeholder="Enter your email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+
+      <div class="footer-content">
+
+        <div class="footer-col">
+          <h3 class="logo">My CV Studio</h3>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>Services</li>
+            <li>Pricing</li>
+            <li>Dashboard</li>
+            <li>Create a Resume</li>
+            <li>Create a Cover Letter</li>
+            <li>ATS Checker</li>
+            <li>Resume Parser</li>
+          </ul>
+        </div>
+
+        >
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li>Resume Templates</li>
+            <li>Cover Letter Templates</li>
+            <li>Resume Builder</li>
+            <li>Cover Letter Builder</li>
+            <li>Resume Summary Generator</li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li>Blog</li>
+            <li>Resume Format</li>
+            <li>Cover Letter Format</li>
+            <li>How to Write a Resume</li>
+            <li>How to Write a Cover Letter</li>
+            <li>Interview Tips</li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li>Careers</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Success Stories</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </footer>
+
+
   </div>
-</nav>
-<div class="container">
-
-<h1 class="text-center p-5 light">Let AI Build The Resume That Builds Your Career</h1>
-<button class="btn text-center " onclick="clickhome()">Start free</button>
-<p class="text-center p-5">Easy-to-use templates, smart prompt-based suggestions, and one-click download.</p>
- 
-
- 
-</div>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
