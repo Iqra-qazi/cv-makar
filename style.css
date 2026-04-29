@@ -450,7 +450,6 @@ button:hover {
   color: #0f0f0f;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .newsletter h2 {
     font-size: 22px;
@@ -461,7 +460,7 @@ button:hover {
   display: none;
   background: white;
   padding: 20px;
-  width: 400px;
+  width: 600px;
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
