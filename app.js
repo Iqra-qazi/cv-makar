@@ -89,29 +89,34 @@ function selectTemplate(templateName) {
 
 window.onload = function () {
 
-  var template = localStorage.getItem("selectedTemplate");
-  var data = JSON.parse(localStorage.getItem("cvData"));
+var template = localStorage.getItem("selectedTemplate");
+var data = JSON.parse(localStorage.getItem("cvData"));
 
-  if (!data || !template) {
-    document.getElementById("cv").innerHTML = "<h2>No Data Found</h2>";
-    return;
-  }
+if (!data || !template) {
+  document.getElementById("cv").innerHTML = "<h2>No Data Found</h2>";
+} else {
 
   if (template === "template1") {
     document.getElementById("cv").innerHTML = `
       <div class="template1">
-        <h1>${data.fName} ${data.lName}</h1>
+        <h1>${data.fullname}</h1>
         <p>${data.email}</p>
-        <p>${data.num}</p>
-        <p>${data.address}</p>
+        <p>${data.phone}</p>
+
         <h3>Job Title</h3>
         <p>${data.title}</p>
+
         <h3>Summary</h3>
         <p>${data.summary}</p>
+
         <h3>Education</h3>
-        <p>${data.education || ""}</p>
-        <h3>Skill</h3>
-        <p>${data.skills || ""}</p>
+        <p>${data.education}</p>
+
+        <h3>Experience</h3>
+        <p>${data.experience}</p>
+
+        <h3>Skills</h3>
+        <p>${data.skills}</p>
       </div>
     `;
   }
@@ -119,30 +124,37 @@ window.onload = function () {
   if (template === "template2") {
     document.getElementById("cv").innerHTML = `
       <div class="template2">
-      <div class ="left">
-        <h2>${data.fName} ${data.lName}</h2>
+        <div class="left">
+          <h2>${data.fullname}</h2>
           <p>${data.email}</p>
-        <p>${data.num}</p>
-        <p>${data.address}</p>
+          <p>${data.phone}</p>
+        </div>
+
         <div class="right">
-         <h3>Job Title</h3>
-        <p>${data.title}</p>
-        <hr>
-<h3>Summary</h3>
-        <p>${data.summary}</p>
-        <h3>Education</h3>
-        <p>${data.education || ""}</p>
-        <h3>Skill</h3>
-        <p>${data.skills || ""}</p>
-      </div>
+          <h3>Job Title</h3>
+          <p>${data.title}</p>
+          <hr>
+
+          <h3>Summary</h3>
+          <p>${data.summary}</p>
+
+          <h3>Education</h3>
+          <p>${data.education}</p>
+
+          <h3>Experience</h3>
+          <p>${data.experience}</p>
+
+          <h3>Skills</h3>
+          <p>${data.skills}</p>
+        </div>
       </div>
     `;
-  }
+  }}
 
-};
+}
 function saveCV() {
   var cv = {
-    fullname: document.getElementById("fullName"),
+    fullname: document.getElementById("fullName").value,
     email: document.getElementById("emailForm").value,
     phone: document.getElementById("phone").value,
     title: document.getElementById("title").value,
@@ -151,15 +163,16 @@ function saveCV() {
     experience: document.getElementById("experience").value,
     skills: document.getElementById("skills").value
   };
-  if (cv.fullname == "" ||
-    cv.emailForm == "" ||
-    cv.phone == "" ||
-    cv.title == "" ||
-    cv.summary == "" ||
-    cv.education == "" ||
-    cv.experience == "" ||
-    cv.skills == ""
 
+  if (
+    !cv.fullname ||
+    !cv.email ||
+    !cv.phone ||
+    !cv.title ||
+    !cv.summary ||
+    !cv.education ||
+    !cv.experience ||
+    !cv.skills
   ) {
     Swal.fire({
       icon: "error",
@@ -170,9 +183,8 @@ function saveCV() {
     return;
   }
 
-
   localStorage.setItem("cvData", JSON.stringify(cv));
-  window.location.href = "template.html"
+  window.location.href = "template.html";
 }
 var currentStep = 0;
 var steps = document.querySelectorAll(".step");
@@ -195,4 +207,3 @@ function prevStep() {
     showStep(currentStep);
   }
 }
-var
